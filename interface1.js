@@ -14,3 +14,12 @@ var secondLake = {
     esAguaDulce: false,
     paises: ['Canada', 'Estados Unidos']
 };
+var thirdLake = {
+    nombre: 'Baikal',
+    profundidad: 1637,
+    largo: 636,
+    area: 31500,
+    esAguaDulce: true,
+    paises: ['Russia'],
+    congela: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo']
+};
