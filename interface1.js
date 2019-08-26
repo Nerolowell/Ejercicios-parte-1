@@ -6,7 +6,7 @@ var firstLake = {
     esAguaDulce: false,
     paises: ['1', '2', '3', '4', '5']
 };
-var secondLake = {
+var lagoDos = {
     nombre: 'Superior',
     largo: 1199,
     profundidad: 1025,
@@ -14,7 +14,7 @@ var secondLake = {
     esAguaDulce: false,
     paises: ['Canada', 'Estados Unidos']
 };
-var thirdLake = {
+var lagoTres = {
     nombre: 'Baikal',
     profundidad: 1637,
     largo: 636,
@@ -22,4 +22,15 @@ var thirdLake = {
     esAguaDulce: true,
     paises: ['Russia'],
     congela: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo']
+};
+var lagocuatro = {
+    nombre: 'Tanganyika',
+    profundidad: 1470,
+    largo: 676,
+    area: 32600,
+    esAguaDulce: true,
+    paises: ['Burundi', 'Tanzania', 'Zambia', 'Congo'],
+    kigoma: 'Tanzania',
+    kalemie: 'Congo',
+    bujumbura: 'Burundi'
 };

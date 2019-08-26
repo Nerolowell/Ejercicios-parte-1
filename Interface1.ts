@@ -1,13 +1,14 @@
-interface Lakes {    
+interface Lagos {    
     nombre: string,    
     area: number,    
     largo: number,    
     profundidad: number,    
     esAguaDulce: boolean,    
     paises: string[],
-    congela?: string[]
+    congela?: string[],
+    [propExtra: string]: any
 }
-let firstLake:Lakes={
+let firstLake:Lagos={
     nombre:'Oceano Caspio',
     largo: 1199,
     profundidad: 1025,
@@ -15,7 +16,7 @@ let firstLake:Lakes={
     esAguaDulce: false,
     paises:['1','2','3','4','5']
 }
-let secondLake:Lakes={
+let lagoDos:Lagos={
     nombre:'Superior',
     largo: 1199,
     profundidad: 1025,
@@ -23,7 +24,7 @@ let secondLake:Lakes={
     esAguaDulce: false,
     paises: ['Canada','Estados Unidos']
 }
-let thirdLake: Lakes = {
+let lagoTres: Lagos = {
     nombre: 'Baikal',    
     profundidad: 1637,    
     largo: 636,    
@@ -32,4 +33,16 @@ let thirdLake: Lakes = {
     paises: ['Russia'],    
     congela: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'] 
 }
+let lagocuatro: Lagos = {    
+    nombre: 'Tanganyika',    
+    profundidad: 1470,    
+    largo: 676,    
+    area: 32600,    
+    esAguaDulce: true,    
+    paises: ['Burundi', 'Tanzania', 'Zambia', 'Congo'],    
+    kigoma:'Tanzania',    
+    kalemie: 'Congo',    
+    bujumbura: 'Burundi' 
+}
+
 
