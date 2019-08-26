@@ -11,3 +11,10 @@ let tanque: Enemigo={
     dano: 12
 }
 tanque.vida= 95;
+interface golpeEnemigo {    
+    (name: Enemigo, damageDone: number): number; }
+ 
+let golpeTanque: golpeEnemigo = function(nombreTanque: Enemigo, danoHecho: number) {
+    nombreTanque.vida -= danoHecho;    
+    return nombreTanque.vida; 
+}
