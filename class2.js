@@ -12,8 +12,9 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Persona = /** @class */ (function () {
-    function Persona(elNombre) {
+    function Persona(elNombre, laEdad) {
         this.nombre = elNombre;
+        this.age = laEdad;
     }
     Persona.prototype.Presentarse = function () {
         console.log("Hola, yo soy " + this.nombre + " :)");
@@ -22,16 +23,19 @@ var Persona = /** @class */ (function () {
 }());
 var Amigo = /** @class */ (function (_super) {
     __extends(Amigo, _super);
-    function Amigo(name, aniosConocido) {
-        var _this = _super.call(this, name) || this;
+    function Amigo(name, age, aniosConocido) {
+        var _this = _super.call(this, name, age) || this;
         _this.aniosConocido = aniosConocido;
         return _this;
     }
     Amigo.prototype.tiempoConocido = function () {
         console.log("Hemos sido amigos por " + this.aniosConocido + " años :)");
     };
+    Amigo.prototype.amigosDesde = function () {
+        var primerAnio = this.age - this.aniosConocido;
+        console.log("Hemos sido amigos desde que yo ten\u00EDa " + primerAnio + " a\u00F1os ");
+    };
     return Amigo;
 }(Persona));
-var amigoA = new Amigo("Jacobo", 6);
-amigoA.Presentarse();
-amigoA.tiempoConocido();
+var amigoA = new Amigo("William", 19, 8);
+amigoA.amigosDesde();
