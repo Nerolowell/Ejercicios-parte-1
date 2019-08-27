@@ -1,5 +1,5 @@
 class Persona {
-    nombre: string ;
+    public nombre: string ;
     constructor(elNombre: string){
         this.nombre = elNombre;
     }
@@ -8,4 +8,6 @@ class Persona {
     }
 }
 let personaA=new Persona("Samantha");
+personaA.Presentarse();
+personaA.nombre="Mindy";
 personaA.Presentarse();

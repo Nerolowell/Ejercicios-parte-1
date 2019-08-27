@@ -9,3 +9,5 @@ var Persona = /** @class */ (function () {
 }());
 var personaA = new Persona("Samantha");
 personaA.Presentarse();
+personaA.nombre = "Mindy";
+personaA.Presentarse();
