@@ -1,5 +1,5 @@
 class Persona {
-    public nombre: string ;
+    private nombre: string ;
     constructor(elNombre: string){
         this.nombre = elNombre;
     }
@@ -7,7 +7,16 @@ class Persona {
         console.log("Hola, yo soy "+ this.nombre +" :)");
     }
 }
-let personaA=new Persona("Samantha");
-personaA.Presentarse();
-personaA.nombre="Mindy";
-personaA.Presentarse();
+class Amigo extends Persona{
+    aniosConocido: number;
+    constructor(name: string, aniosConocido:number){
+        super(name);
+        this.aniosConocido=aniosConocido;
+    }
+    tiempoConocido(){
+        console.log("Hemos sido amigos por "+this.aniosConocido+ " años :)")
+    }
+}
+let amigoA=new Amigo("Jacobo",6);
+amigoA.Presentarse();
+amigoA.tiempoConocido();
